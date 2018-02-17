@@ -16,6 +16,8 @@
     "gatsby-source-filesystem": "^1.5.20",
     "gatsby-transformer-remark": "^1.7.32",
     "glamorous": "^4.11.6",
-    "typography-theme-kirkham": "^0.16.3"
+    "typography-theme-kirkham": "^0.16.3",
+    "intl": "^1.2.5",
+    "react-intl": "^2.4.0"
   }
 }

@@ -1,6 +1,9 @@
+const languages = require('./src/data/languages');
+
 module.exports = {
   siteMetadata: {
     title: `Pandas Eating Lots`,
+    languages
   },
   plugins: [
     {
