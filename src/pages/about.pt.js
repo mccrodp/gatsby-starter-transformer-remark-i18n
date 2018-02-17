@@ -12,7 +12,7 @@ export default ({ data }) =>
   </div>
 
 export const query = graphql`
-  query AboutQuery {
+  query AboutPtQuery {
     site {
       siteMetadata {
         title

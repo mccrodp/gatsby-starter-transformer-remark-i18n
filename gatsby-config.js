@@ -18,5 +18,29 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyDefault: 'en',
+        useLangKeyLayout: false,
+        markdownRemark: {
+          postPage: 'src/templates/blog-post.js',
+          query: `
+          {
+              allMarkdownRemark {
+                  edges {
+                  node {
+                      fields {
+                      slug,
+                      langKey
+                      }
+                  }
+                  }
+              }
+          }
+          `
+        }
+      }
+    },
   ],
 };
